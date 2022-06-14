@@ -1,7 +1,7 @@
 {
-  "name": "prettier-ionic-demo",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+    "name": "prettier-ionic-demo",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "angular"
 }

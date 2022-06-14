@@ -6,21 +6,25 @@ import { ViewMessagePageRoutingModule } from './view-message-routing.module';
 import { ViewMessagePage } from './view-message.page';
 
 describe('ViewMessagePage', () => {
-  let component: ViewMessagePage;
-  let fixture: ComponentFixture<ViewMessagePage>;
+    let component: ViewMessagePage;
+    let fixture: ComponentFixture<ViewMessagePage>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ViewMessagePage ],
-      imports: [IonicModule.forRoot(), ViewMessagePageRoutingModule, RouterModule.forRoot([])]
-    }).compileComponents();
+    beforeEach(waitForAsync(() => {
+        TestBed.configureTestingModule({
+            declarations: [ViewMessagePage],
+            imports: [
+                IonicModule.forRoot(),
+                ViewMessagePageRoutingModule,
+                RouterModule.forRoot([]),
+            ],
+        }).compileComponents();
 
-    fixture = TestBed.createComponent(ViewMessagePage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  }));
+        fixture = TestBed.createComponent(ViewMessagePage);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });
